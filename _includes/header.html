@@ -1,5 +1,6 @@
 <header class="mt2">
   <div class="container flex flex-center">
+
     <div class="flex flex-center">
       <img src="img/logo.png" alt="">
       <div class="ml1 flex flex-column align-end">
@@ -7,6 +8,15 @@
         <p class="mb0">latest version is 0.18.2</p>
       </div>
     </div>
-    <div></div>
+    
+    <div class="flex flex-center">
+      {% for d in site.downloads %}
+        <div class="flex flex-column flex-center p2">
+          <i class="h1 fab fa-{{ d[0] }}"></i>
+          <p class="p0 center h5">{{ d[1] }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
   </div>
 </header>
