@@ -1,1 +1,59 @@
 title: 'Stellarium Astronomy Software'
+port: 4444
+langnames:
+  af: Afrikaans
+  ar: ‫العربية‬'
+  az: Azərbaycan dili
+  be: Беларуская
+  bg: български
+  bn: বাংলা
+  bs: Bosanski
+  ca: Català
+  cs: česky
+  de: Deutsch
+  el: Ελληνικά
+  en: English
+  en_CA: English (Canada)
+  en_GB: English (United Kingdom)
+  eo: Esperanto'
+  es: Español
+  eu: Euskara
+  fa: فارسی
+  fi: Suomen
+  fr: Français
+  gd: Gàidhlig
+  hr: Hrvatski
+  hrx: Hunns-rikk
+  hu: Magyar nyelv
+  id: Bahasa Indonesia
+  is: íslenska
+  it: Italiano
+  ja: 日本語
+  ka: ქართული ენა
+  ko: 한국어/조선말
+  ky: Кыргызча
+  la: Latin
+  lv: Latviešu valoda
+  ms: Bahasa Melayu
+  nb: Norsk bokmål
+  nl: Nederlands
+  pl: Polski
+  pt: Português
+  pt_BR: Português (Brazil)
+  ro: Română
+  ru: Pусский
+  sc: Sardu
+  sk: Slovenčina
+  sq: Gjuha shqipe
+  sr: Српски
+  sv: Svenska
+  th: ภาษาไทย
+  tl: Tagalog
+  tr: Türkçe
+  uk: Yкраїнська
+  ug: Uyƣurqə
+  vi: Tiếng Việt
+  zh: 中文、汉语、漢語
+  zh_CN: 简体中文
+  zh_HK: 香港繁體中文
+  zh_TW: 臺灣正體中文
