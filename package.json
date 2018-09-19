@@ -4,7 +4,7 @@
   "description": "stellarium.org update",
   "main": "index.html",
   "scripts": {
-    "css": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/new.stellarium.org.css --no-map --watch",
+    "css": "postcss css/new.stellarium.org.css -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist --no-map --verbose --watch",
     "start": "concurrently \"npm run css\" \"jekyll serve\" --names \"🛠,💻\" --prefix name"
   },
   "author": "bzelip",
