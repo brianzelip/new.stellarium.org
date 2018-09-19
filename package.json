@@ -1,0 +1,22 @@
+{
+  "name": "new.stellarium.org",
+  "version": "0.1.0",
+  "description": "stellarium.org update",
+  "main": "index.html",
+  "scripts": {
+    "css": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -d css/dist/ css/src/new.stellarium.org.css --no-map --watch",
+    "start": "concurrently \"npm run css\" \"jekyll serve\" --names \"🛠,💻\" --prefix name"
+  },
+  "author": "bzelip",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "concurrently": "^4.0.1",
+    "cssnano": "^4.1.0",
+    "postcss": "^7.0.2",
+    "postcss-cli": "^6.0.0",
+    "postcss-color-function": "^4.0.1",
+    "postcss-custom-properties": "^8.0.3",
+    "postcss-import": "^12.0.0"
+  }
+}
