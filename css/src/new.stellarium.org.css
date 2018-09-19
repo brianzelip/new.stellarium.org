@@ -1,0 +1,12 @@
+/*!  new.stellarium.org.css */
+html,
+body,
+.vh100 {
+  min-height: 100vh;
+}
+body {
+  margin: 0;
+}
+.p2 {
+  padding: 1rem;
+}
