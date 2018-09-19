@@ -4,7 +4,7 @@
     <select id="language">
       {% for l in site.langnames %}
         <option value="{{ l[0] }}">{{ l[1] | append: " (" | append: l[0] | append: ")" }}</option>
-        {% endfor %}
+      {% endfor %}
     </select>
   </div>
 </section>
