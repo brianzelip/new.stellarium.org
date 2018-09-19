@@ -57,3 +57,9 @@ langnames:
   zh_CN: 简体中文
   zh_HK: 香港繁體中文
   zh_TW: 臺灣正體中文
+downloads:
+  - [linux, Linux (source)]
+  - [linux, Linux AppImage; 64 bit]
+  - [apple, Mac OS X10.10+; 64 bit]
+  - [windows, Windows32 bit]
+  - [windows, Windows64 bit]
