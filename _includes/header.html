@@ -12,19 +12,23 @@
     
     <div class="flex">
       {% for d in site.downloads %}
-        <div class="flex flex-column flex-center px1">
-          {% if d[0] != 'flask' %}
+        <a href="#" class="black hover-text-decoration-none hover-inset-shadow">
+          <div class="flex flex-column flex-center px1">
+            {% if d[0] != 'flask' %}
             <i class="h1 fab fa-{{ d[0] }}"></i>
-          {% else %}
+            {% else %}
             <i class="h1 fal fa-flask"></i>
-          {% endif %}
-          <p class="m0 center h5">{{ d[1] }}</p>
+            {% endif %}
+            <p class="m0 center h5">{{ d[1] }}</p>
+          </div>
+        </a>
+        {% endfor %}
+      <a href="#" class="black hover-text-decoration-none hover-inset-shadow">
+        <div class="flex flex-column flex-center px1">
+          <i class="h1 fal fa-book"></i>
+          <p class="m0 center h5">User Guide</p>
         </div>
-      {% endfor %}
-      <div class="flex flex-column flex-center px1">
-        <i class="h1 fal fa-book"></i>
-        <p class="m0 center h5">User Guide</p>
-      </div>
+      </a>
     </div>
 
   </div>
