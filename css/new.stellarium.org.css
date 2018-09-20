@@ -56,6 +56,10 @@ h6 {
 }
 
 /* flexbox */
+
+.justify-center {
+  justify-content: center;
+}
 .justify-end {
   justify-content: flex-end;
 }
@@ -65,8 +69,20 @@ h6 {
 .justify-evenly {
   justify-content: space-evenly;
 }
-.align-end {
+.justify-stretch {
+  justify-content: stretch;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
   align-items: flex-end;
+}
+.align-self-start {
+  align-self: flex-start;
+}
+.shrink0 {
+  flex-shrink: 0;
 }
 
 /* line height */
