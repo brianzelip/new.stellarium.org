@@ -2,7 +2,7 @@
 <section class="bg-black white">
   <div class="container flex flex-center justify-end">
     <label for="language">Other languages: </label>
-    <select id="language">
+    <select id="language" class="p0">
       {% for l in site.langnames %}
         <option value="{{ l[0] }}">{{ l[1] | append: " (" | append: l[0] | append: ")" }}</option>
       {% endfor %}
