@@ -1,22 +1,30 @@
 <!-- TODO make the loosey goosey flexy logo stand stronger than getting all flimsied down on by the rest of the content plus padding to the right -->
 <header class="mt2">
-  <div class="container flex flex-center">
+  <div class="container flex align-items-start">
 
-    <div class="flex flex-center">
+    <div class="flex flex-center shrink0">
       <img src="img/logo.png" alt="">
-      <div class="ml1 flex flex-column align-end">
+      <div class="ml1 flex flex-column align-items-end">
         <h1 class="h0 m0 lhp9">Stellarium</h1>
         <p class="mb0">latest version is 0.18.2</p>
       </div>
     </div>
     
-    <div class="flex flex-center">
+    <div class="flex">
       {% for d in site.downloads %}
-        <div class="flex flex-column flex-center p2">
-          <i class="h1 fab fa-{{ d[0] }}"></i>
-          <p class="p0 center h5">{{ d[1] }}</p>
+        <div class="flex flex-column flex-center px1">
+          {% if d[0] != 'flask' %}
+            <i class="h1 fab fa-{{ d[0] }}"></i>
+          {% else %}
+            <i class="h1 fal fa-flask"></i>
+          {% endif %}
+          <p class="m0 center h5">{{ d[1] }}</p>
         </div>
       {% endfor %}
+      <div class="flex flex-column flex-center px1">
+        <i class="h1 fal fa-book"></i>
+        <p class="m0 center h5">User Guide</p>
+      </div>
     </div>
 
   </div>
