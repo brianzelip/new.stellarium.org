@@ -1,0 +1,78 @@
+/*! Header */
+:root {
+  --header-title-font-size: 1.5rem;
+  --header-subtitle-font-size: 0.75rem;
+  --header-title-align: left;
+  --header-logo-width: 50px;
+  --header-downloads-button-display: flex;
+  --header-downloads-list-display: none;
+  --header-downloads-icon-font-size: 1.5rem;
+  --header-downloads-text-font-size: 0.75rem;
+}
+@media (min-width: 40em) {
+  :root {
+    --header-title-font-size: 2rem;
+    --header-subtitle-font-size: 0.875rem;
+    --header-logo-width: 60px;
+  }
+}
+@media (min-width: 52em) {
+  :root {
+    --header-title-font-size: 3rem;
+    --header-subtitle-font-size: 1rem;
+    --header-title-align: right;
+    --header-logo-width: auto;
+    --header-downloads-button-display: none;
+    --header-downloads-list-display: flex;
+    --header-downloads-icon-font-size: 2rem;
+    --header-downloads-text-font-size: 0.875rem;
+  }
+}
+
+.Header-logo {
+  width: var(--header-logo-width);
+}
+
+.Header-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0.9;
+  text-align: var(--header-title-align);
+  font-size: var(--header-title-font-size);
+}
+
+.Header-subtitle {
+  margin-bottom: 0;
+  font-size: var(--header-subtitle-font-size);
+  text-align: var(--header-title-align);
+}
+
+.Header-downloads--ul {
+  display: var(--header-downloads-list-display);
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.Header-downloads--icon {
+  font-size: var(--header-downloads-icon-font-size);
+}
+
+.Header-downloads--text {
+  margin: 0;
+  text-align: center;
+  font-size: var(--header-downloads-text-font-size);
+}
+
+.Header-downloads--button {
+  display: var(--header-downloads-button-display);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  background-color: white;
+  color: #111;
+}
+.Header-downloads--button:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
+}

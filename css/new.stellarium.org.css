@@ -1,8 +1,9 @@
 /*!  new.stellarium.org.css */
 
 @import './basscss@7.1.1.css';
+@import './components/Header.css';
 
-/* basscss overrides */
+/*! basscss overrides */
 select:not([multiple]) {
   height: auto;
 }
@@ -63,6 +64,9 @@ h6 {
 .justify-end {
   justify-content: flex-end;
 }
+.justify-around {
+  justify-content: space-around;
+}
 .justify-between {
   justify-content: space-between;
 }
@@ -80,6 +84,9 @@ h6 {
 }
 .align-self-start {
   align-self: flex-start;
+}
+.align-self-end {
+  align-self: flex-end;
 }
 .shrink0 {
   flex-shrink: 0;
@@ -108,4 +115,28 @@ h6 {
   .display-none-below-md {
     display: none;
   }
+}
+
+@media (min-width: 52em) {
+  .display-none-at-and-above-md {
+    display: none;
+  }
+}
+
+.md-flex-below-and-none-above {
+  display: flex;
+}
+.md-none-below-and-flex-above {
+  display: none;
+}
+@media (min-width: 52em) {
+  .md-flex-below-and-none-above {
+    display: none;
+  }
+  .md-none-below-and-flex-above {
+    display: flex;
+  }
+}
+.h0 {
+  font-size: 3rem;
 }
