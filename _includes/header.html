@@ -1,36 +1,45 @@
-<header class="mt2">
-  <div class="container flex">
+<header class="mt2 px1">
+  <div class="container flex justify-between">
 
     <div class="flex flex-center shrink0">
-      <img src="img/logo.png" alt="">
-      <div class="ml1 flex flex-column align-items-end">
-        <h1 class="h0 m0 lhp9">Stellarium</h1>
-        <p class="mb0">latest version is 0.18.2</p>
+      <img src="img/logo.png" class="Header-logo" alt="">
+      <div class="ml1">
+        <h1 class="Header-title">Stellarium</h1>
+        <p class="Header-subtitle">latest version is 0.18.2</p>
       </div>
     </div>
 
-    <ul class="list-reset mb0 flex">
+    <ul class="Header-downloads--ul">
       {% for d in site.downloads %}
-      <li class="hover-inset-shadow py1">
+      <li class="py1 hover-inset-shadow">
         <a href="#" class="black hover-text-decoration-none">
           <div class="flex flex-column flex-center px1">
             {% if d[0] != 'flask' %}
-            <i class="h1 fab fa-{{ d[0] }}"></i>
+            <i class="Header-downloads--icon fab fa-{{ d[0] }}"></i>
             {% else %}
-            <i class="h1 fal fa-flask"></i>
+            <i class="Header-downloads--icon fal fa-flask"></i>
             {% endif %}
-            <p class="m0 center h5">{{ d[1] }}</p>
+            <p class="Header-downloads--text">{{ d[1] }}</p>
           </div>
         </a>
       </li>
       {% endfor %}
     </ul>
-    <a href="#" class="py1 flex black hover-text-decoration-none hover-inset-shadow">
-      <div class="flex flex-column flex-center px1">
-        <i class="h1 fal fa-book"></i>
-        <p class="m0 center h5">User Guide</p>
-      </div>
-    </a>
+
+    <div class="flex">
+      <button type="button" class="Header-downloads--button">
+        <div class="flex flex-column flex-center px1">
+          <i class="Header-downloads--icon fal fa-download"></i>
+          <p class="Header-downloads--text">Downloads <i class="fal fa-caret-down"></i></p>
+        </div>
+      </button>
+      <a href="#" class="py1 flex black hover-text-decoration-none hover-inset-shadow">
+        <div class="flex flex-column flex-center px1">
+          <i class="Header-downloads--icon fal fa-book"></i>
+          <p class="Header-downloads--text">User Guide</p>
+        </div>
+      </a>
+    </div>
 
   </div>
 </header>
