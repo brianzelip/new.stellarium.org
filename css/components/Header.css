@@ -67,8 +67,8 @@
 
 .Header-downloads--button {
   display: var(--header-downloads-button-display);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin: 0;
+  padding: 0.5rem 0;
   border: none;
   background-color: white;
   color: #111;
