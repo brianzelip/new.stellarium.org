@@ -27,29 +27,36 @@
     </ul>
 
     <div class="flex">
-      <ul class="Header-downloads--ul-narrow">
-        <li class="flex flex-column flex-center px1">
-          <i class="Header-downloads--icon fal fa-download"></i>
-          <p class="Header-downloads--text">Downloads <i class="fal fa-caret-down"></i></p>
-        </li>
-      </ul>
-      <!-- <div>
-        <button type="button" class="Header-downloads--button">
+      <div class="Header-downloads--mobileContainer">
+        <button type="button" class="Header-downloads--mobileButton" data-js="mobileButton">
           <div class="flex flex-column flex-center px1">
             <i class="Header-downloads--icon fal fa-download"></i>
             <p class="Header-downloads--text">Downloads <i class="fal fa-caret-down"></i></p>
           </div>
         </button>
-        <ul class="Header-downloads--button-dropdown">
-          {% for d in site.downloads %}
-          <li class="pl1">
-            <a href="#" class="Header-downloads--text black">
-              {{ d[1] }}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div> -->
+        <div class="Header-downloads--mobileButton-dropdownContainer" data-js="mobileButton-dropdownContainer">
+          <ul class="Header-downloads--mobileButton-dropdown">
+            {% for d in site.downloads %}
+            <li class="px1">
+              <a href="#" class="Header-downloads--text black">
+                {{ d[1] }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <script>
+          const ddBtn = document.querySelector('[data-js="mobileButton"]');
+          const ddCont = document.querySelector('[data-js="mobileButton-dropdownContainer"]');
+
+          ddCont.addEventListener('mouseenter', function () {
+            ddBtn.classList.add('inset-shadow');
+          });
+          ddCont.addEventListener('mouseleave', function () {
+            ddBtn.classList.remove('inset-shadow');
+          });
+        </script>
+      </div>
       <a href="#" class="py1 flex black hover-text-decoration-none hover-inset-shadow">
         <div class="flex flex-column flex-center px1">
           <i class="Header-downloads--icon fal fa-book"></i>

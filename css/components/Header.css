@@ -4,7 +4,7 @@
   --header-subtitle-font-size: 0.75rem;
   --header-title-align: left;
   --header-logo-width: 50px;
-  --header-downloads-ul-narrow-display: flex;
+  --header-downloads-button-display: flex;
   --header-downloads-list-display: none;
   --header-downloads-icon-font-size: 1.5rem;
   --header-downloads-text-font-size: 0.75rem;
@@ -22,7 +22,7 @@
     --header-subtitle-font-size: 1rem;
     --header-title-align: right;
     --header-logo-width: auto;
-    --header-downloads-ul-narrow-display: none;
+    --header-downloads-button-display: none;
     --header-downloads-list-display: flex;
     --header-downloads-icon-font-size: 2rem;
     --header-downloads-text-font-size: 0.875rem;
@@ -65,27 +65,33 @@
   text-align: center;
 }
 
-.Header-downloads--ul-narrow {
-  display: var(--header-downloads-ul-narrow-display);
+.Header-downloads--mobileButton {
+  display: var(--header-downloads-button-display);
   margin: 0;
   padding: 0.5rem 0;
-  list-style: none;
+  border: none;
+  background-color: white;
+  color: #111;
 }
-.Header-downloads--ul-narrow:hover {
-  cursor: pointer;
+.Header-downloads--mobileButton:hover {
   box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
 }
 
-.Header-downloads--button-dropdown {
-  display: none;
+.Header-downloads--mobileButton-dropdownContainer {
   position: absolute;
+  display: none;
+}
+
+.Header-downloads--mobileButton-dropdown {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
   box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
 }
 
-.Header-downloads--button:hover + .Header-downloads--button-dropdown,
-.Header-downloads--button-dropdown:hover {
+.Header-downloads--mobileContainer:hover
+  > .Header-downloads--mobileButton-dropdownContainer,
+.Header-downloads--mobileButton-dropdownContainer:hover {
   display: block;
 }
