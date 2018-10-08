@@ -41,6 +41,16 @@ input[type='url'],
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(108, 114, 126) 0%,
+    rgb(67, 68, 73) 80%,
+    rgb(61, 62, 66) 100%
+  );
+}
+
 /* Typography */
 body,
 h1,
